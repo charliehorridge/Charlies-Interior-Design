@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(solo_bk.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%; 
+    margin: auto;
+    padding: 35px 0;
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin: 0 80px;
+}
+.navbar ul li a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li:after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.here a{
+    color: rgb(134, 134, 134) !important;
+}
+.here:after{
+    background-color: rgb(104, 104, 104) !important;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40px);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid rgb(192, 192, 0);
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+span{
+    background: rgb(192, 192, 0);
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border-color: transparent;
+}

@@ -1,0 +1,11 @@
+*{
+    border: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 200px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(125%);
+}
